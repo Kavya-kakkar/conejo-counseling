@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+:root {
+  --bg-primary: #FAF7F2;
+  --bg-secondary: #F2ECE4;
+  --bg-dark: #2B2D2F;
+  --color-primary: #335044;
+  --color-secondary: #659392;
+  --color-accent: #9C6644;
+  --text-primary: #2B2D2F;
+  --text-main: #4F5356;
+  --text-muted: #797E81;
+  --border-color: rgba(43, 45, 47, 0.12);
+}
+
+@theme {
+  --font-serif: var(--font-playfair), Georgia, serif;
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --color-cream: #FAF7F2;
+  --color-sage: #7DA7A6;
+  --color-sageText: #659392;
+  --color-darkGray: #333333;
+  --color-lightGray: #666666;
+  --color-headingGray: #555555;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  font-family: var(--font-sans);
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container-narrow {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 1200px;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  background-color: var(--color-primary);
+  padding: 0.75rem 1.75rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #ffffff;
+  transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
